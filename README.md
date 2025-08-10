@@ -26,37 +26,36 @@ Web Docu Scanner fetches text from any public web page, checks it using **Langua
 ## 📦 Requirements  
 
 You’ll need **Python 3.7+** and the following libraries:  
-
-```bash
+```
 pip install requests beautifulsoup4 language-tool-python
+```
+
 ⚙️ Usage
 Run the script with a webpage link:
 
-bash
-Copy
-Edit
+```
 python3 web_doc_scanner.py <URL>
+```
+
 Example:
 
-bash
-Copy
-Edit
+```
 python3 web_doc_scanner.py https://kubernetes.io/docs/tutorials/kubernetes-basics/
 📊 Example Output
-kotlin
-Copy
-Edit
+```
+
 🔍 Issue found:
 Line: Kubernetes is an open-sorce system for automating deployment.
 ❌ Problem: 'open-sorce' is a misspelling.
 ✅ Suggestion: open-source
+
 📂 Project Structure
-bash
-Copy
-Edit
+```
 .
 ├── web_doc_scanner.py   # Main script
 ├── README.md            # Project documentation
+```
+
 ⚠️ Notes
 Works only with publicly accessible pages.
 
